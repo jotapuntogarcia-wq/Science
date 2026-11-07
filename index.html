@@ -50,7 +50,7 @@
             <div class="text-6xl mb-4 animate-bounce">🌱 🔬 🦁</div>
             <h2 class="text-2xl md:text-3xl font-bold text-indigo-900 mb-3">¡Bienvenido a la Misión de Ciencia!</h2>
             <p class="text-slate-600 text-base md:text-lg mb-6 max-w-lg mx-auto">
-                Repasa los temas de <b>Living Things</b>, <b>Plant Kingdom</b> y <b>Ecosystems</b>. Demuestra todo lo que sabes, gana experiencia y ¡conviértete en un Supercientífico!
+                Repasa el tema de <b>Living Things</b> y <b>Plant Kingdom</b>. Demuestra todo lo que sabes, gana experiencia y ¡conviértete en un Supercientífico!
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-left">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="bg-amber-50 p-4 rounded-xl border border-amber-200">
                     <div class="font-bold text-amber-800 mb-1">🟡 Nivel 2</div>
-                    <div class="text-xs text-amber-600">Clasificación de reinos, plantas y procesos vitales.</div>
+                    <div class="text-xs text-amber-600">Clasificación de reinos y partes de las plantas.</div>
                 </div>
                 <div class="bg-rose-50 p-4 rounded-xl border border-rose-200">
                     <div class="font-bold text-rose-800 mb-1">🔴 Nivel 3</div>
@@ -125,7 +125,7 @@
             <div class="bg-slate-50 p-6 rounded-2xl mb-8 flex justify-around items-center border border-slate-200">
                 <div class="text-center">
                     <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Puntuación</div>
-                    <div id="final-score" class="text-3xl font-extrabold text-indigo-600">0/30</div>
+                    <div id="final-score" class="text-3xl font-extrabold text-indigo-600">0/10</div>
                 </div>
                 <div class="h-10 w-px bg-slate-200"></div>
                 <div class="text-center">
@@ -149,7 +149,7 @@
     <!-- Application Script -->
     <script>
         const questionsData = [
-            // LEVEL 1 (10 Preguntas)
+            // LEVEL 1
             {
                 level: 1,
                 question: "What are the three vital functions of all living beings?",
@@ -183,85 +183,7 @@
                 ],
                 explanation: "Las **roots** (raíces) y sus pelos absorbentes (**root hairs**) absorben agua y minerales del suelo."
             },
-            {
-                level: 1,
-                question: "What is the green pigment in plant leaves that absorbs sunlight?",
-                translation: "(¿Cuál es el pigmento verde de las hojas que absorbe la luz solar?)",
-                options: [
-                    { text: "Chlorophyll", isCorrect: true },
-                    { text: "Cytoplasm", isCorrect: false },
-                    { text: "Stomata", isCorrect: false }
-                ],
-                explanation: "La **chlorophyll** (clorofila) capta la luz del sol para realizar la fotosíntesis."
-            },
-            {
-                level: 1,
-                question: "Are plant cells prokaryotic or eukaryotic?",
-                translation: "(¿Las células vegetales son procariotas o eucariotas?)",
-                options: [
-                    { text: "Prokaryotic (no nucleus)", isCorrect: false },
-                    { text: "Eukaryotic (with nucleus)", isCorrect: true },
-                    { text: "They do not have cells", isCorrect: false }
-                ],
-                explanation: "Las plantas están compuestas por células **eukaryotic** (eucariotas), con un núcleo definido que contiene el material genético."
-            },
-            {
-                level: 1,
-                question: "Which structure supports the plant and holds the leaves and flowers?",
-                translation: "(¿Qué estructura sostiene la planta y sostiene las hojas y flores?)",
-                options: [
-                    { text: "Root", isCorrect: false },
-                    { text: "Stem", isCorrect: true },
-                    { text: "Seed", isCorrect: false }
-                ],
-                explanation: "El **stem** (tallo) sostiene la parte aérea de la planta y transporta las sabias."
-            },
-            {
-                level: 1,
-                question: "What type of living things produce their own food through photosynthesis?",
-                translation: "(¿Qué tipo de seres vivos producen su propio alimento mediante la fotosíntesis?)",
-                options: [
-                    { text: "Heterotrophs", isCorrect: false },
-                    { text: "Autotrophs", isCorrect: true },
-                    { text: "Decomposers", isCorrect: false }
-                ],
-                explanation: "Los organismos **autotrophs** (autótrofos), como las plantas, fabrican su propia materia orgánica."
-            },
-            {
-                level: 1,
-                question: "To which kingdom do algae belong?",
-                translation: "(¿A qué reino pertenecen las algas?)",
-                options: [
-                    { text: "Plantae kingdom", isCorrect: false },
-                    { text: "Protists kingdom", isCorrect: true },
-                    { text: "Fungi kingdom", isCorrect: false }
-                ],
-                explanation: "Las algas pertenecen al reino **Protists** (protoctistas), al igual que los protozoos."
-            },
-            {
-                level: 1,
-                question: "What is the female reproductive part of a flower called?",
-                translation: "(¿Cómo se llama la parte reproductora femenina de una flor?)",
-                options: [
-                    { text: "Pistil (or Carpel)", isCorrect: true },
-                    { text: "Stamen", isCorrect: false },
-                    { text: "Petal", isCorrect: false }
-                ],
-                explanation: "El **pistil** (pistilo) o carpelo es el órgano femenino donde se encuentra el ovario."
-            },
-            {
-                level: 1,
-                question: "What is the male reproductive part of a flower called?",
-                translation: "(¿Cómo se llama la parte reproductora masculina de una flor?)",
-                options: [
-                    { text: "Sepal", isCorrect: false },
-                    { text: "Stamen", isCorrect: true },
-                    { text: "Pistil", isCorrect: false }
-                ],
-                explanation: "El **stamen** (estambre) produce los granos de polen en sus anteras."
-            },
-
-            // LEVEL 2 (10 Preguntas)
+            // LEVEL 2
             {
                 level: 2,
                 question: "Why are mushrooms in the Fungi kingdom and not in the Plantae kingdom?",
@@ -306,74 +228,7 @@
                 ],
                 explanation: "Las plantas absorben **carbon dioxide** (dióxido de carbono) para realizar la fotosíntesis y liberar **oxygen** (oxígeno)."
             },
-            {
-                level: 2,
-                question: "What is the difference between raw sap (savia bruta) and elaborated sap (savia elaborada)?",
-                translation: "(¿Cuál es la diferencia entre savia bruta y savia elaborada?)",
-                options: [
-                    { text: "Raw sap is water and minerals; Elaborated sap is food made during photosynthesis", isCorrect: true },
-                    { text: "Raw sap is in leaves; Elaborated sap is inside the roots", isCorrect: false },
-                    { text: "There is no difference between them", isCorrect: false }
-                ],
-                explanation: "La **raw sap** asciende desde la raíz (agua y sales). Tras la fotosíntesis, se transforma en **elaborated sap** con azúcares."
-            },
-            {
-                level: 2,
-                question: "How do mosses absorb water and minerals?",
-                translation: "(¿Cómo absorben el agua y los minerales los musgos?)",
-                options: [
-                    { text: "Through deep roots and long vessels", isCorrect: false },
-                    { text: "Directly through all their body surfaces because they lack conductive vessels", isCorrect: true },
-                    { text: "Through large flowers and seeds", isCorrect: false }
-                ],
-                explanation: "Los **mosses** (musgos) son plantas no vasculares (*non-vascular*); absorben agua directamente por sus diminutas hojas."
-            },
-            {
-                level: 2,
-                question: "What is pollination?",
-                translation: "(¿Qué es la polinización?)",
-                options: [
-                    { text: "The movement of pollen from the stamen to the pistil", isCorrect: true },
-                    { text: "The growth of roots in the soil", isCorrect: false },
-                    { text: "The absorption of carbon dioxide by stomata", isCorrect: false }
-                ],
-                explanation: "La **pollination** ocurre cuando los granos de polen viajan desde los estambres hasta el pistilo (por viento o insectos)."
-            },
-            {
-                level: 2,
-                question: "What process takes place inside the chloroplasts of plant cells?",
-                translation: "(¿Qué proceso ocurre dentro de los cloroplastos de las células vegetales?)",
-                options: [
-                    { text: "Cellular digestion", isCorrect: false },
-                    { text: "Photosynthesis", isCorrect: true },
-                    { text: "Spore formation", isCorrect: false }
-                ],
-                explanation: "En los **chloroplasts** (cloroplastos) se realiza la fotosíntesis gracias a la clorofila."
-            },
-            {
-                level: 2,
-                question: "What do non-seed plants (like mosses and ferns) produce to reproduce?",
-                translation: "(¿Qué producen las plantas sin semillas para reproducirse?)",
-                options: [
-                    { text: "Fruits and seeds", isCorrect: false },
-                    { text: "Spores", isCorrect: true },
-                    { text: "Cones", isCorrect: false }
-                ],
-                explanation: "Tanto musgos como helechos se reproducen mediante **spores** (esporas)."
-            },
-            {
-                level: 2,
-                question: "What role do fungi and bacteria play in an ecosystem?",
-                translation: "(¿Qué papel juegan los hongos y las bacterias en un ecosistema?)",
-                options: [
-                    { text: "Producers", isCorrect: false },
-                    { text: "Consumers", isCorrect: false },
-                    { text: "Decomposers", isCorrect: true }
-                ],
-                explanation: "Son **decomposers** (descomponedores); descomponen restos orgánicos y transforman la materia en sales minerales para el suelo."
-            },
-
-            // LEVEL 3 (10 Preguntas)
+            // LEVEL 3
             {
                 level: 3,
                 question: "What is the main difference between Gymnosperms and Angiosperms?",
@@ -406,83 +261,6 @@
                     { text: "Animalia", isCorrect: true }
                 ],
                 explanation: "Las células del reino **Animalia** son eucariotas pero **sin pared celular**, a diferencia de plantas y hongos."
-            },
-            {
-                level: 3,
-                question: "During respiration, plants consume Oxygen and release Carbon Dioxide. When does this happen?",
-                translation: "(Durante la respiración, las plantas consumen Oxígeno y liberan CO2. ¿Cuándo ocurre esto?)",
-                options: [
-                    { text: "Only during the day", isCorrect: false },
-                    { text: "Only during the night", isCorrect: false },
-                    { text: "Both day and night (24 hours a day)", isCorrect: true }
-                ],
-                explanation: "Las plantas **respiran continuamente (día y noche)**. La fotosíntesis solo ocurre durante el día con luz solar."
-            },
-            {
-                level: 3,
-                question: "What structure forms after fertilization in an Angiosperm flower?",
-                translation: "(¿Qué estructura se forma tras la fertilización en la flor de una Angiosperma?)",
-                options: [
-                    { text: "The ovary becomes the fruit and the ovules become seeds", isCorrect: true },
-                    { text: "The stamens become spores", isCorrect: false },
-                    { text: "The petals turn into root hairs", isCorrect: false }
-                ],
-                explanation: "Tras la fecundación, los óvulos dentro del ovario se convierten en **seeds** (semillas) y el ovario se transforma en el **fruit** (fruto)."
-            },
-            {
-                level: 3,
-                question: "Why is yeast (levadura) placed in the Fungi kingdom and not Monera?",
-                translation: "(¿Por qué la levadura se clasifica en el reino Fungi y no en Monera?)",
-                options: [
-                    { text: "Because it is multicellular and prokaryotic", isCorrect: false },
-                    { text: "Because it has eukaryotic cells with a nucleus, even though it is unicellular", isCorrect: true },
-                    { text: "Because yeast makes its own food using sunlight", isCorrect: false }
-                ],
-                explanation: "Las levaduras son hongos **unicelulares** pero poseen células **eucariotas** (con núcleo), a diferencia de las bacterias."
-            },
-            {
-                level: 3,
-                question: "Where are the sori (soros) located in a fern and what is inside them?",
-                translation: "(¿Dónde están los soros en un helecho y qué hay dentro?)",
-                options: [
-                    { text: "On the roots; they store water", isCorrect: false },
-                    { text: "On the underside of the fronds (leaves); they contain sporangia with spores", isCorrect: true },
-                    { text: "Inside the stem; they transport sap", isCorrect: false }
-                ],
-                explanation: "Los **sori** son abultamientos marrones en el envés de los frondes que albergan esporangios con **spores**."
-            },
-            {
-                level: 3,
-                question: "What is the main rigid structure in plant cells that animal cells lack?",
-                translation: "(¿Cuál es la principal estructura rígida de la célula vegetal que no tienen las células animales?)",
-                options: [
-                    { text: "Cell membrane", isCorrect: false },
-                    { text: "Cell wall (Pared celular)", isCorrect: true },
-                    { text: "Mitochondria", isCorrect: false }
-                ],
-                explanation: "La **cell wall** (pared celular de celulosa) aporta soporte rígido a las plantas."
-            },
-            {
-                level: 3,
-                question: "What is the name of the vessels that transport raw sap from roots to leaves?",
-                translation: "(¿Cómo se llaman los vasos que transportan la savia bruta desde las raíces a las hojas?)",
-                options: [
-                    { text: "Xylem vessels", isCorrect: true },
-                    { text: "Phloem vessels", isCorrect: false },
-                    { text: "Stomata", isCorrect: false }
-                ],
-                explanation: "El **xylem** (xilema) transporta agua y minerales (savia bruta). El **phloem** (floema) transporta la savia elaborada."
-            },
-            {
-                level: 3,
-                question: "How does plant tropism (like phototropism) differ from animal interaction?",
-                translation: "(¿En qué se diferencia el tropismo vegetal del comportamiento de respuesta animal?)",
-                options: [
-                    { text: "Plants respond through permanent growth toward/away from stimuli; animals respond through movement", isCorrect: true },
-                    { text: "Plants have a complex central nervous system", isCorrect: false },
-                    { text: "Tropisms are fast movements while animals move slowly", isCorrect: false }
-                ],
-                explanation: "Los **tropisms** son respuestas de crecimiento permanente (ej. hacia la luz), ya que las plantas no tienen sistema nervioso ni locomotor."
             }
         ];
 
@@ -648,22 +426,20 @@
                 const titleEl = document.getElementById('result-title');
                 const subtitleEl = document.getElementById('result-subtitle');
 
-                const ratio = this.score / questionsData.length;
-
-                if (ratio === 1) {
+                if (this.score === questionsData.length) {
                     emojiEl.innerText = "🏆";
                     titleEl.innerText = "¡Puntuación Perfecta!";
-                    subtitleEl.innerText = "¡Increíble! Has acertado las 30 preguntas y demostrado ser un auténtico Maestro Científico.";
-                    confetti({ particleCount: 120, spread: 100, origin: { y: 0.6 } });
-                } else if (ratio >= 0.7) {
+                    subtitleEl.innerText = "¡Increíble! Has demostrado ser un auténtico Maestro Científico.";
+                    confetti({ particleCount: 100, spread: 100, origin: { y: 0.6 } });
+                } else if (this.score >= 7) {
                     emojiEl.innerText = "🌟";
-                    titleEl.innerText = "¡Gran trabajo!";
-                    subtitleEl.innerText = "Tienes un excelente dominio de la asignatura de Ciencias Naturales.";
-                    confetti({ particleCount: 60, spread: 80, origin: { y: 0.6 } });
+                    titleEl.innerText = "¡Buen trabajo!";
+                    subtitleEl.innerText = "Tienes un gran dominio de Living Things y Plant Kingdom.";
+                    confetti({ particleCount: 50, spread: 80, origin: { y: 0.6 } });
                 } else {
                     emojiEl.innerText = "📘";
                     titleEl.innerText = "¡Buen intento!";
-                    subtitleEl.innerText = "Repasa las explicaciones de las preguntas que has fallado y vuelve a intentarlo.";
+                    subtitleEl.innerText = "Repasa un poco los conceptos clave y vuelve a intentarlo para superar tu marca.";
                 }
             }
 
